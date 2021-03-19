@@ -229,9 +229,10 @@ console.log("Task 2", artists[10]["name"]);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
+function getArtistByIndex(array, index) {
+    return `the artist at index ${array[index].id} is ${array[index].name}`;
+  }
+  console.log("Task 3", getArtistByIndex(artists, 0));
 
 
 
