@@ -244,7 +244,18 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, string) {
+function get20s(array) {
+  const getArray = []
+  for(let i = 0; i < array.length; i++){
+    let string=array[i].years.split(" - ")
+    if(string[0] >=1900 && string[1] <= 2000){
+    getArray.push(array[i].name)}
+}
+return getArray;
+}
+console.log("Task 4", get20s(artists));
+  // const word =[string];
+  // return word;
 //  const getArray =[];
 //   for(let i = 0; i < array.length; i++){
 //      if(array[i].includes(string)){
@@ -252,8 +263,8 @@ function get20s(array, string) {
 //       }
 //     }
 //     return getArray;
-}
- console.log("Task 4", get20s(artists, "1907"));
+
+ 
 
   // if(array.includes(years)){    
     // return array.years.split("");
@@ -328,11 +339,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  const newArray = []
+  for(let i = 0; i < array.length; i++){
+  let number = array[i].paintings
+  if(number>=100){
+  newArray.push(array[i].name)
+  }
 }
-
-
+ return newArray;     // return array[i]["paintings"]};
+}
+console.log("Task 7", lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
