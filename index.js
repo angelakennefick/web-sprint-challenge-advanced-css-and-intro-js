@@ -244,9 +244,35 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(array, string) {
+//  const getArray =[];
+//   for(let i = 0; i < array.length; i++){
+//      if(array[i].includes(string)){
+//        getArray.push(array[i].name);
+//       }
+//     }
+//     return getArray;
 }
+ console.log("Task 4", get20s(artists, "1907"));
+
+  // if(array.includes(years)){    
+    // return array.years.split("");
+  
+  // let newArray = [];
+  // for(let i = 0; i < array.length; i++){
+  //   if(array[i].years.includes(years)){
+     
+      // return array.years;
+  
+
+
+
+  //   if(array[i].years.includes(>=1900)){
+  //     return newArray.name;
+  //   }else if(array[i].years.includes(<=2000))
+  // }
+  // return newArray;
+
 
 
 
@@ -259,10 +285,12 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array, index){
+   array.splice(index, 1);
+   return array.length;
 }
    
+console.log("Task 5", removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -280,11 +308,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+    artists.push({
+      id: "20",
+      name: "Angela Kennefick",
+      years: "1996 - 2020",
+      genre: "Web Design", 
+      nationality: "American",
+      bio: "Add 1-2 sentences (or use lorem ipsum)"},);
+      return array;
   }
 
-  
+  console.log("Task 6 yayYEET");
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
